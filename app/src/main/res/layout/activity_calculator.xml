@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity"
+    android:orientation="vertical"
+    android:background="@color/backGrand">
+
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:id="@+id/edt_num_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="عدد اول"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:id="@+id/edt_num_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="عدد دوم"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/button_shape_2"
+            android:text="*"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="80dp"
+            android:id="@+id/btn_div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="25dp"
+            android:background="@drawable/button_shape_2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/button_shape_2"
+            android:text="+"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="80dp"
+            android:id="@+id/btn_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="25dp"
+            android:background="@drawable/button_shape_2"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نتیجه"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="#000"/>
+
+
+</LinearLayout>
