@@ -71,6 +71,7 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(intent);
                     //ذخیره حالت ورود برای چک کردن ورود نخست در فضای اشتراکی
                     editor.putBoolean("loginCheck",true);
+                    editor.commit();
                     //خاتمه صفحه
                     finish();
                 }
